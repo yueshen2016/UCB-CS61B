@@ -6,7 +6,7 @@ class NBody{
 		return r;
 	}
 
-	public static Planet[] readBodies(String fileName){
+	public static Planet[] readPlanets(String fileName){
 		In in = new In(fileName);
 		int num_Planet = in.readInt();
 		in.readDouble();
@@ -27,7 +27,7 @@ class NBody{
 		double T = Double.parseDouble(args[0]);
 		double dt = Double.parseDouble(args[1]);
 		String filename = args[2];
-		Planet[] b = NBody.readBodies(filename);
+		Planet[] b = NBody.readPlanets(filename);
 		int num_Planet = b.length;
 		double radius = NBody.readRadius(filename);
 		double t = 0;
