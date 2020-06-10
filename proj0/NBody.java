@@ -6,6 +6,9 @@ public class NBody{
 		return r;
 	}
 
+	public NBody(){
+	}
+
 	public static Planet[] readPlanets(String fileName){
 		In in = new In(fileName);
 		int num_Planet = in.readInt();
